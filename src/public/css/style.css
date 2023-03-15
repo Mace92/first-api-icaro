@@ -1,0 +1,135 @@
+body{
+    color: rgb(228, 45, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body >h2{
+    text-align: center;
+}
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+.div-form{
+    color: rgb(230, 20, 184);
+    display: flex;
+    flex-direction: column;
+    border-style: ridge;
+    border-radius: 12px;
+    width: 500px;
+    -webkit-backdrop-filter: blur (10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: brightness (30%);
+    backdrop-filter: brightness(30%);
+}
+
+.div-cont-1 > input, select{
+    width: 220px;
+}
+.div-cont-1 > input:focus{
+    background-color: rgb(212, 222, 243);
+}
+.div-cont-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    padding: 20px 10px 20px 10px;
+    height: 180px;
+    gap: 2px;
+}
+.div-cont-2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 15px;
+}
+.genders{
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+}
+.genders-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-bottom-style: ridge;
+    box-shadow: var(--medio);
+    border-radius: 15px;
+    height: 50px;
+    flex-wrap: wrap;
+    width: 75px;
+    text-align: center;
+}
+.genders-child >label{
+    cursor: pointer;
+}
+.div-cont-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+.div-cont-3 > button{
+    color: aliceblue;
+    background-color: rgb(56, 1, 38);
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: px;
+}
+
+
+
+:root {
+    --shadow-color: 10deg 50% 20%;
+    --medio:
+      -0.8px 0.6px 1.2px hsl(var(--shadow-color) / 0.39),
+      -2px 3.9px 7.4px -0.9px hsl(var(--shadow-color) / 0.15),
+      -8.6px 5.7px 26.5px -1.8px hsl(var(--shadow-color) / 0.5);
+}
+.body-contact{
+    color: rgb(0, 0, 0);
+}
+.bg-img-contacto{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+.div-contacto{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur (50px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: brightness (85%);
+    backdrop-filter: brightness(85%);
+    align-items: center;
+    align-content: space-between;
+    padding: 20px 10px 20px 10px;
+    gap: 5px;
+}
+.div-contacto > :placeholder-shown{
+    width: 200px;
+}
+.div-contacto > input:focus{
+    background-color: rgb(212, 222, 243);
+}
+.div-contacto > textarea{
+    max-width: 170px;
+    max-height: 100px;
+}
+.div-contacto > label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
